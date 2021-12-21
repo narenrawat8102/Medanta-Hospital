@@ -33,3 +33,122 @@ footer {
   margin: 0;
 }
 /* CSS Initial Set-up ends here  */
+@media only screen and (max-device-width: 480px) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1250px) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 1251px) {
+  /* Styles */
+}
+
+/* Header Starts Here  */
+header {
+  height: 114px;
+}
+
+.header-home {
+  height: 40px;
+  border: 1px solid green;
+  background-color: #424242;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-box {
+  display: flex;
+  align-items: center;
+}
+
+.home-box a {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+.home-box button {
+  color: #db5134;
+  background-color: #000;
+  padding: 12px 15px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-box ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.contact-box ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+.contact-box button {
+  background-color: #db5134;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-menu-appt {
+  width: 1450px;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+
+.logo-box {
+  width: 370px;
+}
+
+.manu-box {
+  width: 900px;
+}
+
+.menu-box ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+.menu-box ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #606164;
+  padding: 0 7px;
+}
+
+.appointment-box {
+  width: 180px;
+}
+
+.appointment-box button {
+  background-color: #db5134;
+  color: #fff;
+  border-color: #db5134;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Header Ends Here  */
