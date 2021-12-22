@@ -33,21 +33,6 @@ footer {
   margin: 0;
 }
 /* CSS Initial Set-up ends here  */
-@media only screen and (max-device-width: 480px) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1250px) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 1251px) {
-  /* Styles */
-}
 
 /* Header Starts Here  */
 header {
@@ -98,6 +83,18 @@ header {
   color: #fff;
 }
 
+.contact-box ul li a:hover {
+  color: #db5134;
+}
+
+.contact-box ul li:nth-child(n + 4) > a {
+  font-weight: 600;
+}
+
+.contact-box ul li {
+  color: #fff;
+}
+
 .contact-box button {
   background-color: #db5134;
   color: #fff;
@@ -122,7 +119,12 @@ header {
   width: 370px;
 }
 
-.manu-box {
+.topnav,
+.search-box {
+  display: none;
+}
+
+.menu-box {
   width: 900px;
 }
 
@@ -136,11 +138,17 @@ header {
   text-decoration: none;
   font-size: 14px;
   color: #606164;
-  padding: 0 7px;
+  padding: 30px 7px 28px 7px;
+}
+
+.menu-box ul li a:hover {
+  color: #db5134;
+  background-color: silver;
 }
 
 .appointment-box {
   width: 180px;
+  text-align: center;
 }
 
 .appointment-box button {
@@ -151,4 +159,118 @@ header {
   padding: 10px;
   border-radius: 5px;
 }
-/* Header Ends Here  */
+/* Header CSS Ends Here  */
+
+/* Main CSS Starts Here  */
+/* Cancer Opinion Div CSS Starts Here  */
+.opinion-div {
+  height: 23px;
+  background-color: #db5134;
+}
+
+.opinion-div p {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.opinion-div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Cancer Opinion Div CSS Ends Here  */
+/* Main CSS Ends Here  */
+
+@media only screen and (max-device-width: 480px) {
+  .header-home,
+  .appointment-box,
+  .menu-box {
+    display: none;
+  }
+
+  .logo-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .topnav {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    top: 3px;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    position: absolute;
+    top: 55px;
+    width: 100vw;
+  }
+
+  .topnav #myLinks a {
+    color: black;
+    padding: 10px 22px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .topnav a {
+    color: #db5134;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    font-size: 30px;
+  }
+
+  .topnav a.icon i {
+    transform: scale(1.5, 1);
+  }
+
+  .logo-box img {
+    width: 114px;
+    height: 36px;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 15px;
+  }
+
+  .search-box span i {
+    font-size: 17px;
+    color: #cc3919;
+  }
+
+  .search-box div i {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 3px 5px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header-home {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1250px) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 1251px) {
+  /* Styles */
+}

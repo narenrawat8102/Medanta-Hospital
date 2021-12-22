@@ -23,11 +23,11 @@
         <div class="contact-box">
           <nav>
             <ul>
-              <li><a href="#">Hospitals Near Me</a></li>
-              <li><a href="#">eCLINIC-Telemedicine</a></li>
-              <li><a href="#">Get a Second Opinion</a></li>
+              <li><a href="#">Hospitals Near Me</a> &nbsp; |</li>
+              <li><a href="#">eCLINIC-Telemedicine</a> &nbsp; |</li>
+              <li><a href="#">Get a Second Opinion</a> &nbsp; |</li>
               <li><a href="#">Emergency:1068</a></li>
-              <li><a href="#">+91-124-4141414</a></li>
+              <li><a href="#">+91-124-4141414</a> &nbsp; |</li>
               <li><a href="#">Invester Relations</a></li>
             </ul>
           </nav>
@@ -37,7 +37,36 @@
       <div class="header-logo">
         <div class="logo-menu-appt">
           <div class="logo-box">
-            <img src="./asset/Medanta-logo.png" alt="" />
+            <!-- Mobile Hamburger Menu  -->
+            <div class="topnav">
+              <div id="myLinks">
+                <a href="#news">Specialities</a>
+                <a href="#contact">Diseases</a>
+                <a href="#about">Medical Treatments</a>
+                <a href="#contact">Medical Technologies</a>
+                <a href="#contact">International Patients</a>
+                <a href="#contact">Facilities & Services</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">eCLINIC-Telemedicine</a>
+                <a href="#contact">Investor Relations</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <!-- Mobile Hamburger Menu  -->
+            <div>
+              <img src="./asset/Medanta-logo.png" alt="" />
+            </div>
+            <!-- Search for Mobile  -->
+            <div class="search-box">
+              <span
+                ><i class="fa fa-search" aria-hidden="true"></i> Search</span
+              >
+              |
+              <div><i class="fa fa-phone" aria-hidden="true"></i></div>
+            </div>
+            <!-- Search for Mobile  -->
           </div>
           <div class="menu-box">
             <nav>
@@ -58,5 +87,25 @@
       </div>
     </header>
     <!-- Header Ends Here  -->
+
+    <!-- Main Starts Here  -->
+    <main>
+      <!-- Cancer Opinion Section Starts Here  -->
+      <!-- <div class="opinion-div">
+        <p><a href="#">Get Cancer Second Opinion</a></p>
+      </div> -->
+      <!-- Cancer Opinion Section Ends Here  -->
+    </main>
+    <!-- Main Ends Here  -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
