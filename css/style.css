@@ -37,6 +37,10 @@ footer {
 /* Header Starts Here  */
 header {
   height: 114px;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  background: #fff;
 }
 
 .header-home {
@@ -181,9 +185,154 @@ header {
 }
 
 /* Cancer Opinion Div CSS Ends Here  */
+/* Slider CSS Starts Here  */
+.slider-container {
+  height: 753px;
+  background-image: url("../asset/Medanat-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.slider-box {
+  width: 1140px;
+  height: 665px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heading-para-box {
+  width: 1140px;
+  padding: 60px 120px 30px;
+}
+
+.heading-para-box h1 {
+  font-size: 42px;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.heading-para-box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+.heading-para-box > div {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.medicity-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.medicity-box div {
+  display: flex;
+  max-width: 230px;
+}
+
+.medicity-box div h1 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 1000;
+  margin-right: 10px;
+}
+
+.medicity-box div p {
+  font-size: 18px;
+  color: #fff;
+  align-self: center;
+}
+
+.spine-box {
+  width: 1140px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.icon-update {
+  padding: 24px;
+  background-color: #999;
+}
+
+.icon-update a i {
+  color: white;
+}
+.spine-para > a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 25px;
+}
+
+.spine-para > span {
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+  padding-left: 5px;
+}
+/* Slider CSS Emds Here  */
+
+/* Best in Healthcare Image Section CSS Starts Here */
+.healthcare-box {
+  width: 1140px;
+  height: 410px;
+  background-image: url("../asset/best-healthcare.jpg");
+  margin: auto;
+  margin-top: -95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.healthcare-para {
+  width: 525px;
+  height: 283px;
+  padding: 20px 10px;
+}
+
+.healthcare-para h2 {
+  font-size: 42px;
+  text-align: center;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.healthcare-para p {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+/* Best in Healthcare Image Section CSS Ends Here */
 /* Main CSS Ends Here  */
 
 @media only screen and (max-device-width: 480px) {
+  header {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 75px;
+    padding: 0 15px 15px;
+  }
+
   .header-home,
   .appointment-box,
   .menu-box {
@@ -199,14 +348,13 @@ header {
   .topnav {
     position: relative;
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 7px;
     top: 3px;
   }
 
   .topnav #myLinks {
     display: none;
     position: absolute;
-    top: 55px;
     width: 100vw;
   }
 
@@ -228,9 +376,8 @@ header {
   .topnav a.icon {
     display: block;
     position: absolute;
-    left: 30px;
     top: 0;
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .topnav a.icon i {
@@ -246,7 +393,6 @@ header {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-right: 15px;
   }
 
   .search-box span i {
@@ -258,6 +404,58 @@ header {
     border: 2px solid black;
     border-radius: 15px;
     padding: 3px 5px;
+  }
+
+  .slider-container {
+    height: 945px;
+    background-image: url(../asset/Medanat-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .heading-para-box {
+    width: 100vw;
+    padding: 0 15px;
+  }
+
+  .heading-para-box h1 {
+    padding-top: 90px;
+  }
+
+  .medicity-box {
+    width: 100vw;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .spine-box {
+    width: 90vw;
+    margin: auto;
+    padding: 10px 10px 0 10px;
+    height: auto;
+    gap: 15px;
+  }
+
+  .icon-update {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    color: white;
+    align-self: baseline;
+  }
+
+  .spine-para {
+    padding: 25px 16px;
+    line-height: 2;
+  }
+
+  .spine-para > a {
+    padding-left: 0;
   }
 }
 
