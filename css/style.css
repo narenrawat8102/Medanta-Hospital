@@ -38,7 +38,7 @@ footer {
 header {
   height: 114px;
   position: sticky;
-  z-index: 99;
+  z-index: 9999;
   top: 0;
   background: #fff;
 }
@@ -174,7 +174,7 @@ header {
 
 .opinion-div p {
   text-align: center;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
 .opinion-div a {
@@ -299,11 +299,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
+  position: relative;
 }
 
 .healthcare-para {
   width: 525px;
-  height: 283px;
   padding: 20px 10px;
 }
 
@@ -321,11 +322,276 @@ header {
   text-align: center;
 }
 /* Best in Healthcare Image Section CSS Ends Here */
+
+/* Specialisations Section CSS Starts Here */
+.specialisation-container {
+  background-image: url("../asset/specialization-image.jpg");
+  margin-top: -65px;
+}
+
+.specialisation-box {
+  width: 1140px;
+  margin: auto;
+  padding: 140px 0 85px;
+}
+
+.specialisation-box h2 {
+  font-size: 42px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.special-square {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 50px 105px;
+}
+
+.box {
+  width: 166px;
+  height: 190px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box a {
+  text-align: center;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.box img {
+  height: 60px;
+  width: 60px;
+}
+
+.box a:hover {
+  color: tomato;
+}
+
+.box:nth-child(10) {
+  background: transparent;
+  align-items: center;
+  padding: 0;
+}
+
+.box:nth-child(10) a {
+  color: #fff;
+}
+
+.box:nth-child(10) a:hover {
+  color: black;
+}
+/* Specialisations Section CSS Ends Here */
+
+/* Meet A Doctor Section CSS Starts Here */
+.meet-container {
+  width: 1140px;
+  margin: auto;
+  padding: 100px 10px 80px;
+  margin-top: -70px;
+  z-index: 999;
+  background: #fff;
+  position: relative;
+}
+
+.meet-container h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.form-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box p {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  width: 252px;
+}
+
+.select-box label {
+  font-size: 11px;
+}
+
+.select-box select {
+  font-size: 14px;
+  font-weight: 600;
+  color: #db5134;
+  background: white;
+  outline: none;
+  margin-left: -5px;
+}
+
+.form-box form button {
+  padding: 10px 20px;
+  margin-left: 25px;
+  background: tomato;
+  color: white;
+}
+
+.all-doctors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.all-doctors a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #db5134;
+}
+/* Meet A Doctor Section CSS Ends Here */
 /* Main CSS Ends Here  */
+
+/* Footer CSS Strats Here  */
+footer {
+  background-color: #eaeaea;
+  margin-top: -70px;
+  padding-top: 100px;
+}
+
+.footer-container {
+  width: 1175px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-box1 {
+  display: flex;
+}
+
+.f1-boxes {
+  width: 350px;
+  padding: 50px 45px;
+}
+
+.f1-boxes h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.f1-boxes p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 2em;
+}
+
+.f1-boxes ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.f1-boxes ul li a {
+  color: black;
+}
+
+.f1-boxes ul li a:hover {
+  color: #db5134;
+}
+
+.f1-boxes a {
+  text-decoration: none;
+  color: #db5134;
+  font-size: 14px;
+}
+
+.f1-boxes img {
+  width: 115px;
+  height: 45px;
+}
+
+.footer-box2 {
+  display: flex;
+  gap: 90px;
+  padding: 35px 15px 25px;
+  border-top: 1px solid lightgray;
+}
+
+.f2-box1 {
+  width: 750px;
+}
+
+.f2-box1 ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.f2-box1 ul li {
+  padding: 10px 21px 10px;
+}
+
+.f2-box1 ul li:nth-child(1) {
+  padding-left: 0;
+}
+
+.f2-box1 ul li:nth-child(5) {
+  padding-right: 40px;
+}
+
+.f2-box1 ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #666;
+}
+
+.f2-box1 ul li a:hover {
+  color: #db5134;
+}
+
+.f2-box1 ul li p {
+  font-size: 12px;
+  color: #666;
+}
+
+.f2-box2 {
+  width: 300px;
+  padding: 22px 10px 0;
+}
+
+.f2-box2 p {
+  font-size: 12px;
+  text-align: right;
+}
+/* Footer CSS Ends Here  */
 
 @media only screen and (max-device-width: 480px) {
   header {
-    z-index: 999;
+    z-index: 99999;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -407,7 +673,7 @@ header {
   }
 
   .slider-container {
-    height: 945px;
+    height: 1175px;
     background-image: url(../asset/Medanat-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -456,6 +722,69 @@ header {
 
   .spine-para > a {
     padding-left: 0;
+  }
+
+  .healthcare-box {
+    width: 90vw;
+    background-position: center top;
+    margin-top: -196px;
+  }
+
+  .healthcare-para {
+    padding: 55px 15px;
+    height: auto;
+  }
+
+  .healthcare-para h2 {
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .specialisation-box {
+    padding: 90px 0 85px;
+    width: 85vw;
+  }
+
+  .specialisation-box h2 {
+    font-size: 26px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .special-square {
+    padding: 50px 25px;
+  }
+
+  .box {
+    width: 115px;
+    padding: 10px 5px;
+  }
+
+  .meet-container {
+    width: 90vw;
+    padding: 35px 10px 40px;
+    margin-top: -80px;
+    background: #fff;
+  }
+
+  .meet-container h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .form-box form {
+    flex-direction: column;
+  }
+
+  .select-box {
+    width: 305px;
+  }
+
+  .form-box form button {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
