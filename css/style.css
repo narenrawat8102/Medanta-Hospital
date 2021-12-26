@@ -349,6 +349,7 @@ header {
   gap: 25px;
   flex-wrap: wrap;
   padding: 50px 105px;
+  justify-content: space-evenly;
 }
 
 .box {
@@ -842,6 +843,7 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 9999;
+    width: 100vw;
   }
 
   .doc-box {
