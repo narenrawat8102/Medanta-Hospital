@@ -299,7 +299,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9998;
   position: relative;
 }
 
@@ -552,7 +552,8 @@ footer {
 }
 
 .f2-box1 ul li {
-  padding: 10px 21px 10px;
+  padding: 0 21px;
+  margin: 0 0 5px;
 }
 
 .f2-box1 ul li:nth-child(1) {
@@ -576,6 +577,7 @@ footer {
 .f2-box1 ul li p {
   font-size: 12px;
   color: #666;
+  line-height: 22px;
 }
 
 .f2-box2 {
@@ -586,6 +588,14 @@ footer {
 .f2-box2 p {
   font-size: 12px;
   text-align: right;
+}
+
+.doc-appt {
+  display: none;
+}
+
+.message-box {
+  display: none;
 }
 /* Footer CSS Ends Here  */
 
@@ -785,6 +795,105 @@ footer {
     margin-left: 0;
     width: 100%;
     margin-top: 20px;
+  }
+
+  .footer-container {
+    width: 100%;
+    display: block;
+  }
+
+  .footer-box1 {
+    display: none;
+  }
+
+  .footer-box2 {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .f2-box1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .f2-box1 ul {
+    justify-content: center;
+  }
+
+  .f2-box1 ul li a {
+    font-size: 13px;
+  }
+
+  .f2-box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f2-box2 p {
+    font-size: 13px;
+  }
+
+  .doc-appt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+  }
+
+  .doc-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding: 13px;
+  }
+
+  .doc-box:nth-child(2) {
+    border-left: 1px solid #db5134;
+    gap: 2px;
+  }
+
+  .doc-box a {
+    font-size: 13px;
+    color: #db5134;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .doc-box a p {
+    text-align: center;
+  }
+
+  .message-box img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .message-box {
+    background: #db5134;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 999999;
+    transform: translate(34%, 0%) rotate(-90deg);
+  }
+
+  .message-box a {
+    font-size: 27px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
   }
 }
 
